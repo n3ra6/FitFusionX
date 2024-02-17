@@ -25,6 +25,14 @@ header img {
     margin-right: 20px; /* отступ справа от изображения */
     margin-left: 20px;
 }
+header a {
+    margin-left: auto;
+}
+header a img {
+    width: 40px; /* Ширина иконки */
+    height: auto; /* Автоматическое изменение высоты */
+    margin-right: 10px; /* Отступ справа, если необходимо */
+}
 
 header h1 {
     margin: 0;
