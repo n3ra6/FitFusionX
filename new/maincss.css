@@ -7,7 +7,7 @@ body {
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
-    padding-top: 100px;
+    padding-top: 0px;
 }
 
 .container {
@@ -25,14 +25,12 @@ body {
     right: 7px;
 }
 .header {
-    background-image: url(pictures/bi\ копия.jpg);
+    background-image: url(pictures/bi\ копия\ with\ body.jpg);
     height: 100vh;
-    background-size: cover;
-    position: fixed;
+    background-size: auto;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 9999; /* чтобы шапка была выше остального контента */
 }
 
 .header-line {
@@ -41,6 +39,7 @@ body {
     align-items: center;
     justify-content: space-between; /* Изменение свойства на space-between */
     position: relative; /* Добавление позиционирования relative */
+    z-index: 999;
 }
 .header-logo img {
     width: 100px; 
@@ -68,11 +67,11 @@ body {
     position: relative;
 }
 .cart img {
-    width: 20px;
+    width: 30px;
     height: auto;
     position: absolute;
-    top: 18px;
-    right: 7px;
+    top: 16px;
+    right: 50px;
 }
 .num {
     color: black;
@@ -85,7 +84,7 @@ body {
 }
 .phone {
     position: relative;
-    right: 200px; /* или другое значение */
+    right: 100px; /* или другое значение */
 }
 .phone-text {
     font-size: 14px;
@@ -97,6 +96,7 @@ body {
     align-items: center;
 }
 .button {
+    border-radius: 10px;
     background-color: black;
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -104,15 +104,17 @@ body {
     font-weight: 700;
     position: absolute;
     top: 50px;
-    right: 150px;
+    right: 0px;
     transition: background-color 0.2s linear;
 }
 .button:hover {
     background-color: rgb(175, 175, 175);
 }
+
 .header-dowm {
-    position: relative;;
+    position: relative;
 }
+
 .header-title {
     color: white;
     font-family: "Open Sans", sans-serif;
@@ -152,6 +154,7 @@ body {
     left: 56px;
 }
 .header-button {
+    border-radius: 10px;
     background-color: black;
     padding: 14px 28px;
     color: white;
@@ -163,4 +166,44 @@ body {
 }
 .header-button:hover {
     background-color: rgb(175, 175, 175);
+}
+.cards-holder{
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    box-shadow: 10px 10px 40px 20px #0000001A;
+    width: 349px;
+    margin-right: 31px;
+    background-color: white;
+    margin-top: -80px;
+    padding: 10px 10px;
+}
+.card-img1 {
+    width: 87px;
+}
+.card-img2 {
+    width: 87px;
+}
+.card-img3 {
+    width: 70px;
+}
+.card-image {
+    display: flex;
+    justify-content: center;
+    padding-top: 31px;
+}
+.card-title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+}
+.card-desc {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
 }
